@@ -8864,3 +8864,41 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 2023-06-19 23:24:34,512:INFO:Preloading libraries
 2023-06-19 23:24:34,514:INFO:Set up data.
 2023-06-19 23:24:34,532:INFO:Set up index.
+2023-06-19 23:43:45,521:INFO:Initializing create_model()
+2023-06-19 23:43:45,522:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021A8E53E880>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-06-19 23:43:45,523:INFO:Checking exceptions
+2023-06-19 23:43:45,616:INFO:Importing libraries
+2023-06-19 23:43:45,616:INFO:Copying training dataset
+2023-06-19 23:43:45,690:INFO:Defining folds
+2023-06-19 23:43:45,690:INFO:Declaring metric variables
+2023-06-19 23:43:45,711:INFO:Importing untrained model
+2023-06-19 23:43:45,726:INFO:Random Forest Classifier Imported successfully
+2023-06-19 23:43:45,757:INFO:Starting cross validation
+2023-06-19 23:43:45,761:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-06-19 23:43:54,187:INFO:Calculating mean and std
+2023-06-19 23:43:54,188:INFO:Creating metrics dataframe
+2023-06-19 23:43:54,194:INFO:Finalizing model
+2023-06-19 23:43:55,027:INFO:Uploading results into container
+2023-06-19 23:43:55,029:INFO:Uploading model into container now
+2023-06-19 23:43:55,041:INFO:_master_model_container: 16
+2023-06-19 23:43:55,041:INFO:_display_container: 5
+2023-06-19 23:43:55,042:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=123, verbose=0, warm_start=False)
+2023-06-19 23:43:55,042:INFO:create_model() successfully completed......................................
+2023-06-19 23:43:55,136:INFO:Initializing predict_model()
+2023-06-19 23:43:55,136:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000021A8E53E880>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=123, verbose=0, warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021A8E524F70>)
+2023-06-19 23:43:55,136:INFO:Checking exceptions
+2023-06-19 23:43:55,136:INFO:Preloading libraries
+2023-06-19 23:43:55,139:INFO:Set up data.
+2023-06-19 23:43:55,167:INFO:Set up index.
