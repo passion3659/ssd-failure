@@ -11,7 +11,6 @@
   - MB1_clustering.ipynb
     - failure 발생 날짜 포함 이전 10일에 대해서, time series clsutreing (Kmeans based on DTW distance)
     - 각 클러스터별 특징 분석 진행 중
-    -      
 
 ### 2023-06-13 회의 이후 기록
 - 저번에 회의를 할때 window방법, 4일을 input으로 넣으면 5일을 label값으로 한다는 것을 토론하였는데
