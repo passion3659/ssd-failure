@@ -1,22 +1,17 @@
 # ssd-failure
+   
 
-### 2023-06-06
-일로 되어있는 데이터를 월로 묶었다.
-1월 2월에 대해서 변수를 확보했다.
-
-앞으로 해야할일
-- y labeling
-  - failure 1 , healthy 0 
-- classification
-- eda?
-
-
-### 2023-06-07
-- 0 인거 지우고
-- 하나의 값으로 이루어진거 지우고
-=> 58개 feature로 줄였다!
-
-- labeling 코드 완성
+### 2023-07-31
+  - MB1_LSTM.ipynb
+    - LSTM
+    - Conv 1d + LSTM
+    - LSTM + Attention
+    - Conv 1d + LSTM + Attention
+      - window_size = 30 ,90 에 대해서 각각 실험 진행
+  - MB1_clustering.ipynb
+    - failure 발생 날짜 포함 이전 10일에 대해서, time series clsutreing (Kmeans based on DTW distance)
+    - 각 클러스터별 특징 분석 진행 중
+    -      
 
 ### 2023-06-13 회의 이후 기록
 - 저번에 회의를 할때 window방법, 4일을 input으로 넣으면 5일을 label값으로 한다는 것을 토론하였는데
@@ -48,4 +43,26 @@
     - fail된 디스크개수(275개)만큼 healthy한 디스크(275개)를 가져와서 병합하는 작업을 거쳤다.
     - 그리고 그렇게 병합한 dataframe을 final_data_MA1_after_deleted.csv에 저장한다. 
   - MA1_by_automl.ipynb
-    - 만들어진 final_data_MA1_after_deleted.csv로 automl을 돌렸다. 
+    - 만들어진 final_data_MA1_after_deleted.csv로 automl을 돌렸다.
+
+
+### 2023-06-07
+- 0 인거 지우고
+- 하나의 값으로 이루어진거 지우고
+=> 58개 feature로 줄였다!
+
+- labeling 코드 완성
+  
+### 2023-06-06
+일로 되어있는 데이터를 월로 묶었다.
+1월 2월에 대해서 변수를 확보했다.
+
+앞으로 해야할일
+- y labeling
+  - failure 1 , healthy 0 
+- classification
+- eda?
+
+
+
+
